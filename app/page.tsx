@@ -43,6 +43,54 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="mt-8 grid gap-4 lg:grid-cols-[1.2fr_1fr]">
+        <article className="card-premium p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
+            Lectura comercial del lead
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">
+            Fortalezas detectadas
+          </h2>
+          <ul className="mt-4 space-y-3 text-sm text-[var(--color-text-soft)] sm:text-base">
+            <li>• reputación alta</li>
+            <li>• ubicación fuerte sobre 18 de Julio</li>
+            <li>• marca visual ya definida</li>
+            <li>• propuesta clara de servicios</li>
+            <li>• contenido real en Instagram</li>
+            <li>• posibilidad de vender tanto cortes como cursos</li>
+          </ul>
+        </article>
+
+        <article className="card-premium p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
+            Brecha a explotar
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">
+            Oportunidad de conversión
+          </h2>
+          <ul className="mt-4 space-y-3 text-sm text-[var(--color-text-soft)] sm:text-base">
+            <li>• no hay web propia visible</li>
+            <li>• no existe una experiencia clara de conversión fuera de Instagram</li>
+            <li>• la propuesta comercial hoy depende demasiado del perfil social</li>
+            <li>
+              • falta una pieza que ordene: qué hacen, cuánto cuesta, dónde están,
+              cómo reservar y por qué elegirlos
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section className="thesis-card mt-4 p-6 sm:p-8">
+        <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
+          Tesis comercial de la demo
+        </p>
+        <p className="mt-3 max-w-4xl text-lg font-medium leading-relaxed text-[var(--color-title)] sm:text-xl">
+          La demo no debe parecer una web institucional. Debe parecer una{" "}
+          <span className="text-white">máquina de captar reservas</span> con estética
+          de barbería premium y con un segundo CTA para cursos.
+        </p>
+      </section>
     </main>
   );
 }
