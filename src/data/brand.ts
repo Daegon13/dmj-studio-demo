@@ -4,6 +4,7 @@ export const brand = {
   zone: "Centro, Montevideo",
   address: "18 de Julio 1710 esq. Magallanes",
   mapReference: "A 1 cuadra de Plaza Cagancha · Fácil acceso en bus y estacionamiento cercano",
+  siteUrl: "https://dmj-studio-demo.vercel.app",
   contact: {
     whatsappLabel: "Reservar por WhatsApp",
     whatsappUrl:
@@ -18,7 +19,7 @@ export const brand = {
     note: "reseñas verificables en plataformas públicas",
   },
   hero: {
-    eyebrow: "Demo comercial · Patch 05",
+    eyebrow: "Demo comercial · Patch 06",
     title: "Una web que ordena reservas, reduce mensajes sueltos y convierte más",
     description:
       "DMJ Studio puede pasar de responder todo por Instagram a guiar cada lead con pasos claros, horarios visibles y cierres directos por WhatsApp.",
@@ -67,7 +68,7 @@ export const brand = {
   },
   placeholders: {
     logo: "/brand/logo-mark.svg",
-    heroFrame: "Frame visual placeholder para galería premium",
+    heroFrame: "Espacio de imagen premium: silla principal + detalle de herramientas",
   },
 } as const;
 
