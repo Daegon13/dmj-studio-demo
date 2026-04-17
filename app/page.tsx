@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HeroSection } from "@/src/components/landing/HeroSection";
 import { ServicesGrid } from "@/src/components/landing/ServicesGrid";
 import { TestimonialsSection } from "@/src/components/landing/TestimonialsSection";
@@ -36,12 +37,29 @@ export default function Home() {
           <p className="eyebrow">Ubicación y horario</p>
           <h2 className="section-title mt-3">Vení directo, sin vueltas</h2>
 
-          <div className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--color-text-soft)]">
+          <div className="location-frame mt-5 overflow-hidden">
+            <Image
+              src={brand.location.imageUrl}
+              alt={brand.location.imageAlt}
+              width={1400}
+              height={920}
+              className="location-image"
+              sizes="(min-width: 1024px) 45vw, 100vw"
+            />
+          </div>
+
+          <div className="location-details mt-4">
             <p>
-              <strong className="text-[var(--color-title)]">Dirección:</strong> {brand.address}
+              <strong>Dirección</strong>
+              <span>{brand.address}</span>
             </p>
             <p>
-              <strong className="text-[var(--color-title)]">Referencia:</strong> {brand.mapReference}
+              <strong>Barrio</strong>
+              <span>{brand.location.neighborhood}</span>
+            </p>
+            <p>
+              <strong>Referencia</strong>
+              <span>{brand.location.landmark}</span>
             </p>
           </div>
 
@@ -57,6 +75,14 @@ export default function Home() {
             ))}
           </ul>
           <p className="mt-4 text-xs leading-relaxed text-[var(--color-muted)]">{brand.businessHours.note}</p>
+          <a
+            href={brand.location.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary mt-5 w-full sm:w-auto"
+          >
+            Ver en Google Maps
+          </a>
         </article>
 
         <aside className="glass-panel animate-enter-3 availability-secondary p-5 sm:p-6" aria-label="Disponibilidad de agenda demo">
@@ -78,23 +104,34 @@ export default function Home() {
       <TestimonialsSection />
 
       <section className="card-premium cta-strong animate-enter-4 p-6 text-center sm:p-10">
+        <div className="cta-aura pointer-events-none" />
         <p className="eyebrow text-white/75">Cierre comercial</p>
         <h2 className="mt-3 text-balance text-3xl font-semibold text-white sm:text-4xl">{brand.finalCta.title}</h2>
         <p className="mx-auto mt-4 max-w-2xl text-sm text-pretty text-white/85 sm:text-base">{brand.finalCta.description}</p>
 
-        <a
-          href={brand.contact.whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary mt-7 min-w-64 sm:min-w-72"
-        >
-          {brand.finalCta.primaryLabel}
-        </a>
+        <div className="cta-actions mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={brand.contact.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary min-w-64 sm:min-w-72"
+          >
+            {brand.finalCta.primaryLabel}
+          </a>
+          <a
+            href={brand.contact.coursesUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary min-w-52 border-white/35 bg-white/8 text-white"
+          >
+            {brand.contact.coursesLabel}
+          </a>
+        </div>
       </section>
 
       <aside className="mobile-sticky-cta" aria-label="Accesos rápidos">
         <a href={brand.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-          Reservar
+          Reservar ahora
         </a>
         <a href={brand.contact.coursesUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
           Cursos

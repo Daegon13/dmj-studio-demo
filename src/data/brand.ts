@@ -4,6 +4,14 @@ export const brand = {
   zone: "Centro, Montevideo",
   address: "18 de Julio 1710 esq. Magallanes",
   mapReference: "A 1 cuadra de Plaza Cagancha · Fácil acceso en bus y estacionamiento cercano",
+  location: {
+    imageUrl:
+      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Fachada de barbería urbana iluminada durante la tarde",
+    neighborhood: "Centro, Montevideo",
+    landmark: "A 1 cuadra de Plaza Cagancha",
+    mapsUrl: "https://maps.google.com/?q=18+de+Julio+1710+Montevideo",
+  },
   siteUrl: "https://dmj-studio-demo.vercel.app",
   contact: {
     whatsappLabel: "Reservar por WhatsApp",

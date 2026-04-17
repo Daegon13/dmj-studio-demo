@@ -345,10 +345,63 @@ body {
 }
 
 .cta-strong {
+  position: relative;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.18), transparent 42%),
-    linear-gradient(130deg, #9a1f24, #710f15 60%, #4e0b0f 100%);
+    radial-gradient(circle at 16% 14%, rgba(255, 255, 255, 0.18), transparent 42%),
+    radial-gradient(circle at 80% 80%, rgba(255, 215, 180, 0.15), transparent 45%),
+    linear-gradient(130deg, #b1252a, #710f15 56%, #43080b 100%);
   box-shadow: var(--shadow-strong), var(--shadow-inset);
+}
+
+.cta-aura {
+  position: absolute;
+  inset: auto -15% -55% -15%;
+  z-index: 0;
+  height: 75%;
+  background: radial-gradient(circle, rgba(255, 215, 196, 0.42) 0%, rgba(255, 215, 196, 0.08) 45%, transparent 72%);
+  filter: blur(12px);
+}
+
+.cta-strong > * {
+  position: relative;
+  z-index: 1;
+}
+
+.location-frame {
+  border: 1px solid rgba(210, 223, 240, 0.22);
+  border-radius: var(--radius-md);
+  background: rgba(10, 13, 20, 0.75);
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.location-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.location-details {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.location-details p {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--color-text-soft);
+}
+
+.location-details strong {
+  color: var(--color-title);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
 }
 
 .mobile-sticky-cta {
@@ -358,16 +411,28 @@ body {
   z-index: 30;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.65rem;
-  padding: 0.85rem var(--space-inline) calc(0.85rem + env(safe-area-inset-bottom));
+  gap: 0.55rem;
+  padding: 0.75rem var(--space-inline) calc(0.75rem + env(safe-area-inset-bottom));
   border-top: 1px solid rgba(224, 232, 242, 0.2);
-  background: rgba(5, 8, 12, 0.9);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(8, 12, 18, 0.82), rgba(5, 8, 12, 0.96));
+  backdrop-filter: blur(11px);
 }
 
 .mobile-sticky-cta .btn {
   min-height: 2.8rem;
-  font-size: 0.9rem;
+  font-size: 0.87rem;
+  letter-spacing: 0.01em;
+}
+
+.mobile-sticky-cta .btn-primary {
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(202, 45, 49, 0.42);
+}
+
+.mobile-sticky-cta .btn-secondary {
+  font-weight: 650;
+  border-color: rgba(179, 198, 224, 0.35);
+  color: rgba(238, 244, 250, 0.88);
 }
 
 .animate-enter-1,
