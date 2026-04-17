@@ -1,0 +1,17 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="44" fill="#0B0D11"/>
+  <rect x="10" y="10" width="220" height="220" rx="36" stroke="url(#ring)" stroke-width="2"/>
+  <path d="M54 166V74H101C129 74 145 90 145 116C145 142 129 158 101 158H77V166H54ZM77 139H98C112 139 121 130 121 116C121 102 112 93 98 93H77V139Z" fill="#F3F4F6"/>
+  <path d="M161 74H184V166H161V74Z" fill="#F3F4F6"/>
+  <path d="M184 74H150V93H184V74Z" fill="url(#pole)"/>
+  <defs>
+    <linearGradient id="ring" x1="20" y1="20" x2="210" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C3440"/>
+      <stop offset="1" stop-color="#0F141C"/>
+    </linearGradient>
+    <linearGradient id="pole" x1="150" y1="74" x2="184" y2="93" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CA2D31"/>
+      <stop offset="1" stop-color="#2A71D4"/>
+    </linearGradient>
+  </defs>
+</svg>

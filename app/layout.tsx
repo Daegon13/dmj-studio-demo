@@ -1,34 +1,33 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { brand } from "@/src/data/brand";
-
-const sans = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-const display = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
 
 export const metadata: Metadata = {
   title: `${brand.name} | Demo comercial`,
   description:
-    "Demo comercial premium para barbería en Montevideo, orientada a reservas y cursos.",
+    "Demo comercial de alto impacto para barbería premium en Montevideo.",
   applicationName: brand.name,
+  metadataBase: new URL("https://dmj-studio-demo.local"),
   keywords: [
+    brand.name,
     "barbería premium",
     "barbería en Montevideo",
-    "reservas por WhatsApp",
-    "DMJ Studio",
+    "reserva por WhatsApp",
+    "demo comercial",
   ],
   openGraph: {
-    title: `${brand.name} | Barbería premium`,
-    description: "Barbería premium en el Centro de Montevideo.",
+    title: `${brand.name} | ${brand.businessLine} premium`,
+    description: `${brand.businessLine} premium en ${brand.zone}.`,
     type: "website",
     locale: "es_UY",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${brand.name} | Demo comercial`,
+    description: `Base comercial premium de ${brand.businessLine}.`,
+  },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
 };
 
@@ -38,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${sans.variable} ${display.variable} h-full antialiased`}>
+    <html lang="es" className="h-full antialiased">
       <body className="min-h-full bg-[var(--color-bg)] text-[var(--color-text)]">
         {children}
       </body>
