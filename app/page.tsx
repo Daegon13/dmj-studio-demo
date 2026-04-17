@@ -2,155 +2,154 @@ import { brand } from "@/src/data/brand";
 
 export default function Home() {
   return (
-    <main className="shell py-8 sm:py-10">
-      <section className="hero-grid card-premium relative overflow-hidden p-6 sm:p-8 lg:p-12">
-        <div className="ring-light pointer-events-none absolute right-[-3rem] top-[-3rem] h-56 w-56 rounded-full" />
-        <div className="barber-pole pointer-events-none absolute bottom-[-5rem] left-[36%] h-60 w-52 -rotate-12 rounded-full opacity-70" />
-        <div className="chrome-glow pointer-events-none absolute left-[-6rem] top-[35%] h-44 w-44 rounded-full" />
+    <>
+      <main className="shell py-8 sm:py-10">
+        <section className="hero-grid card-premium relative overflow-hidden p-6 sm:p-8 lg:p-12">
+          <div className="ring-light pointer-events-none absolute right-[-3rem] top-[-3rem] h-56 w-56 rounded-full" />
+          <div className="barber-pole pointer-events-none absolute bottom-[-5rem] left-[36%] h-60 w-52 -rotate-12 rounded-full opacity-70" />
+          <div className="chrome-glow pointer-events-none absolute left-[-6rem] top-[35%] h-44 w-44 rounded-full" />
 
-        <div className="relative z-10">
-          <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">
-            {brand.hero.eyebrow} · {brand.zone}
-          </p>
-          <h1 className="heading-display mt-4 max-w-2xl text-4xl leading-[1.08] text-[var(--color-title)] sm:text-5xl lg:text-6xl">
-            {brand.hero.headline}
-          </h1>
-          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[var(--color-text-soft)] sm:text-base">
-            {brand.hero.subheadline}
-          </p>
-
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              {brand.hero.primaryCtaLabel}
-            </a>
-            <a href={brand.hero.coursesUrl} className="btn btn-secondary">
-              {brand.hero.secondaryCtaLabel}
-            </a>
-          </div>
-
-          <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[var(--color-text-soft)]">
-            <span className="text-[var(--color-title)]">★ {brand.rating}</span>
-            <span>·</span>
-            <span>{brand.reviewsCount} reseñas</span>
-            <span>·</span>
-            <span>{brand.address}</span>
-          </div>
-        </div>
-
-        <aside className="glass-panel relative z-10 mt-8 p-5 sm:p-6 lg:mt-0">
-          <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Posicionamiento</p>
-          <ul className="mt-4 space-y-3 text-sm text-[var(--color-text)]">
-            {brand.positioning.map((phrase) => (
-              <li key={phrase} className="flex gap-2 leading-relaxed">
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-accent)]" />
-                <span>{phrase}</span>
-              </li>
-            ))}
-          </ul>
-        </aside>
-      </section>
-
-      <section className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {brand.services.map((service) => (
-          <article key={service} className="glass-panel p-5">
-            <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Servicio</p>
-            <h2 className="mt-3 text-xl font-semibold text-[var(--color-title)]">{service}</h2>
-            <p className="mt-2 text-sm text-[var(--color-text-soft)]">
-              Técnica precisa, terminación prolija y asesoría para mantener tu estilo.
+          <div className="relative z-10">
+            <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">
+              {brand.hero.eyebrow} · {brand.zone}
             </p>
-          </article>
-        ))}
-      </section>
+            <h1 className="heading-display mt-4 max-w-2xl text-4xl leading-[1.08] text-[var(--color-title)] sm:text-5xl lg:text-6xl">
+              {brand.hero.headline}
+            </h1>
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[var(--color-text-soft)] sm:text-base">
+              {brand.hero.subheadline}
+            </p>
 
-      <section className="mt-5 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-        <article className="card-premium p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Estética del estudio</p>
-          <h2 className="heading-display mt-3 text-3xl text-[var(--color-title)] sm:text-4xl">
-            Negro grafito, detalles cromados y luz de ring para mostrar cortes reales
-          </h2>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--color-text-soft)] sm:text-base">
-            La experiencia visual transmite barbería urbana moderna: espejos, máquinas, tijeras y acabado premium
-            con un acento rojo puntual para reforzar marca y llamados a la acción.
-          </p>
-        </article>
-        <article className="glass-panel p-6 sm:p-8">
-          <h3 className="text-sm uppercase tracking-[0.2em] text-[var(--color-muted)]">Confianza</h3>
-          <ul className="mt-4 space-y-3 text-sm text-[var(--color-text)]">
-            {brand.trust.map((item) => (
-              <li key={item} className="border-b border-white/10 pb-3 last:border-b-0 last:pb-0">
-                {item}
-              </li>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                {brand.hero.primaryCtaLabel}
+              </a>
+              <a href={brand.hero.coursesUrl} className="btn btn-secondary">
+                {brand.hero.secondaryCtaLabel}
+              </a>
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-[var(--color-text-soft)]">
+              <span className="text-[var(--color-title)]">★ {brand.rating}</span>
+              <span>·</span>
+              <span>{brand.reviewsCount} reseñas</span>
+            </div>
+          </div>
+
+          <aside className="glass-panel relative z-10 mt-8 p-5 sm:p-6 lg:mt-0">
+            <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Confianza inmediata</p>
+            <ul className="mt-4 space-y-3 text-sm text-[var(--color-text)]">
+              {brand.trustBadges.map((badge) => (
+                <li key={badge} className="flex gap-2 leading-relaxed">
+                  <span>{badge}</span>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </section>
+
+        <section className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {brand.services.map((service) => (
+            <article key={service.name} className="glass-panel p-5">
+              <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Servicio destacado</p>
+              <h2 className="mt-3 text-xl font-semibold text-[var(--color-title)]">{service.name}</h2>
+              <p className="mt-1 text-sm text-[var(--color-accent)]">{service.price}</p>
+              <p className="mt-2 text-sm text-[var(--color-text-soft)]">{service.description}</p>
+            </article>
+          ))}
+        </section>
+
+        <section className="mt-5 grid gap-4 lg:grid-cols-3">
+          {brand.gallery.map((item) => (
+            <article key={item} className="card-premium p-6 sm:p-8">
+              <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Experiencia / galería</p>
+              <h3 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">{item}</h3>
+              <p className="mt-3 text-sm text-[var(--color-text-soft)]">
+                Sección mock pensada para fotos reales que refuercen calidad, ambiente y detalle profesional.
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section className="mt-5 card-premium p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Cómo reservar</p>
+          <h2 className="heading-display mt-3 text-3xl text-[var(--color-title)] sm:text-4xl">Claridad que convierte</h2>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+            {brand.bookingSteps.map((step, index) => (
+              <article key={step} className="glass-panel p-5">
+                <p className="text-sm font-semibold text-[var(--color-title)]">Paso {index + 1}</p>
+                <p className="mt-2 text-sm text-[var(--color-text-soft)]">{step}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="cursos" className="mt-5 card-premium p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Cursos</p>
+          <h2 className="heading-display mt-3 text-3xl text-[var(--color-title)] sm:text-4xl">{brand.course.title}</h2>
+          <ul className="mt-5 grid gap-3 text-sm text-[var(--color-text-soft)] md:grid-cols-2">
+            {brand.course.details.map((detail) => (
+              <li key={detail} className="glass-panel p-4">• {detail}</li>
             ))}
           </ul>
-          <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-6 w-full">
-            Reservar por WhatsApp
+          <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary mt-6">
+            {brand.course.cta}
           </a>
-        </article>
-      </section>
-      <section id="cursos" className="mt-5 pb-8">
-        <article className="card-premium p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Formación profesional</p>
-          <h2 className="heading-display mt-3 text-3xl text-[var(--color-title)] sm:text-4xl">
-            Cortes, barba, cejas y formación profesional
-          </h2>
-          <p className="mt-3 max-w-2xl text-sm text-[var(--color-text-soft)] sm:text-base">
-            Sumá una sección de cursos con cupos y horarios para transformar la web en un canal de ventas completo.
-          </p>
-          <div className="mt-6">
-            <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-              Consultar por cursos
-            </a>
+        </section>
+
+        <section className="mt-5 card-premium p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Prueba social</p>
+          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">Reputación visible para reducir fricción</h2>
+          <p className="mt-2 text-sm text-[var(--color-text-soft)]">{brand.rating} / 5 · {brand.reviewsCount}+ reseñas</p>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+            {brand.reviews.map((review) => (
+              <article key={review.name} className="glass-panel p-5">
+                <p className="text-sm text-[var(--color-text-soft)]">“{review.text}”</p>
+                <p className="mt-4 text-sm font-semibold text-[var(--color-title)]">{review.name}</p>
+              </article>
+            ))}
           </div>
-        </article>
-      </section>
+        </section>
 
-      <section className="mt-8 grid gap-4 lg:grid-cols-[1.2fr_1fr]">
-        <article className="card-premium p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
-            Lectura comercial del lead
-          </p>
-          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">
-            Fortalezas detectadas
-          </h2>
-          <ul className="mt-4 space-y-3 text-sm text-[var(--color-text-soft)] sm:text-base">
-            <li>• reputación alta</li>
-            <li>• ubicación fuerte sobre 18 de Julio</li>
-            <li>• marca visual ya definida</li>
-            <li>• propuesta clara de servicios</li>
-            <li>• contenido real en Instagram</li>
-            <li>• posibilidad de vender tanto cortes como cursos</li>
-          </ul>
-        </article>
+        <section className="mt-5 grid gap-4 pb-24 lg:grid-cols-[1fr_1fr]">
+          <article className="card-premium p-6 sm:p-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Ubicación</p>
+            <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">Centro de Montevideo</h2>
+            <p className="mt-3 text-sm text-[var(--color-text-soft)]">{brand.address}</p>
+            <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-[var(--color-text-soft)]">
+              Mapa mock de referencia para reforzar cercanía y confianza.
+            </div>
+          </article>
 
-        <article className="card-premium p-6 sm:p-8">
-          <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
-            Brecha a explotar
-          </p>
-          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">
-            Oportunidad de conversión
-          </h2>
-          <ul className="mt-4 space-y-3 text-sm text-[var(--color-text-soft)] sm:text-base">
-            <li>• no hay web propia visible</li>
-            <li>• no existe una experiencia clara de conversión fuera de Instagram</li>
-            <li>• la propuesta comercial hoy depende demasiado del perfil social</li>
-            <li>
-              • falta una pieza que ordene: qué hacen, cuánto cuesta, dónde están,
-              cómo reservar y por qué elegirlos
-            </li>
-          </ul>
-        </article>
-      </section>
+          <article className="card-premium p-6 sm:p-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">Horarios</p>
+            <ul className="mt-4 space-y-3 text-sm text-[var(--color-text-soft)]">
+              {brand.schedule.map((line) => (
+                <li key={line}>{line}</li>
+              ))}
+            </ul>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Reservar ahora
+              </a>
+              <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                Abrir WhatsApp
+              </a>
+            </div>
+          </article>
+        </section>
+      </main>
 
-      <section className="thesis-card mt-4 p-6 sm:p-8">
-        <p className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
-          Tesis comercial de la demo
-        </p>
-        <p className="mt-3 max-w-4xl text-lg font-medium leading-relaxed text-[var(--color-title)] sm:text-xl">
-          La demo no debe parecer una web institucional. Debe parecer una{" "}
-          <span className="text-white">máquina de captar reservas</span> con estética
-          de barbería premium y con un segundo CTA para cursos.
-        </p>
-      </section>
-    </main>
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-[#090b0f]/95 p-3 backdrop-blur sm:hidden">
+        <div className="mx-auto flex w-full max-w-md gap-2">
+          <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary flex-1">
+            Reservar
+          </a>
+          <a href="#cursos" className="btn btn-secondary flex-1">
+            Cursos
+          </a>
+        </div>
+      </div>
+    </>
   );
 }
