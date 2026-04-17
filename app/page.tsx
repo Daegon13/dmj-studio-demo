@@ -1,5 +1,6 @@
 import { HeroSection } from "@/src/components/landing/HeroSection";
 import { ServicesGrid } from "@/src/components/landing/ServicesGrid";
+import { TestimonialsSection } from "@/src/components/landing/TestimonialsSection";
 import { brand } from "@/src/data/brand";
 
 const slotClassByStatus: Record<(typeof brand.availability.slots)[number]["status"], string> = {
@@ -73,6 +74,8 @@ export default function Home() {
           </ul>
         </aside>
       </section>
+
+      <TestimonialsSection />
 
       <section className="card-premium cta-strong animate-enter-4 p-6 text-center sm:p-10">
         <p className="eyebrow text-white/75">Cierre comercial</p>

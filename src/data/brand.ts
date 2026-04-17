@@ -83,6 +83,43 @@ export const brand = {
       { time: "19:00", status: "Completo" },
     ],
   },
+  testimonials: {
+    eyebrow: "Testimonios",
+    title: "Lo que comentan clientes después del turno",
+    description:
+      "Mock comercial con reseñas tipo Google/Instagram para reforzar confianza antes del cierre por WhatsApp.",
+    items: [
+      {
+        quote: "Reservé en 2 minutos y llegué sin esperar. El acabado quedó impecable.",
+        author: "Matías R.",
+        meta: "Cliente frecuente · Corte + barba",
+      },
+      {
+        quote: "Se nota el orden: precio claro, horario claro y confirmación al instante.",
+        author: "Nicolás P.",
+        meta: "Primera visita · Corte clásico",
+      },
+      {
+        quote: "El flujo por WhatsApp evita vueltas y me dejó todo confirmado en un click.",
+        author: "Santiago V.",
+        meta: "Cliente mensual · Barba premium",
+      },
+    ],
+    imageStrip: [
+      {
+        src: "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1200&q=80",
+        alt: "Barbero realizando un corte con degradado",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1503951458645-643d53bfd90f?auto=format&fit=crop&w=1200&q=80",
+        alt: "Cliente en sillón de barbería durante perfilado",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1200&q=80",
+        alt: "Herramientas y acabado final en barbería",
+      },
+    ],
+  },
   businessHours: {
     title: "Horarios de atención",
     note: "Estos horarios son demo y se editan desde data local.",
