@@ -143,6 +143,12 @@ export const brand = {
       "Convertí consultas dispersas en reservas claras con pasos simples, agenda visible y cierre directo por WhatsApp.",
     primaryLabel: "Quiero mi web comercial",
   },
+  footer: {
+    eyebrow: "DMJ Studio · Presencia digital",
+    title: "Estructura modular para iterar diseño sin tocar routing",
+    description:
+      "La landing se organiza en bloques independientes conectados a `brand.ts`, para acelerar pruebas visuales y ajustes de copy sin romper la base App Router.",
+  },
   placeholders: {
     logo: "/brand/logo-mark.svg",
     heroFrame: "Espacio de imagen premium: silla principal + detalle de herramientas",

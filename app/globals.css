@@ -435,6 +435,35 @@ body {
   color: rgba(238, 244, 250, 0.88);
 }
 
+.visual-footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(143, 176, 226, 0.2), transparent 44%),
+    radial-gradient(circle at 84% 78%, rgba(208, 62, 76, 0.18), transparent 48%);
+}
+
+.visual-footer-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .visual-footer-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: start;
+  }
+}
+
 .animate-enter-1,
 .animate-enter-2,
 .animate-enter-3,
