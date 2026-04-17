@@ -232,6 +232,53 @@ body {
   border-color: rgba(214, 227, 246, 0.32) !important;
 }
 
+
+.service-card {
+  overflow: hidden;
+  border: 1px solid rgba(182, 202, 226, 0.28);
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, rgba(23, 32, 44, 0.9), rgba(10, 14, 21, 0.95));
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.service-image-wrap {
+  position: relative;
+  border-bottom: 1px solid rgba(203, 217, 236, 0.2);
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-chip-popular {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 214, 128, 0.65);
+  background: rgba(126, 80, 8, 0.82);
+  color: #ffebbc;
+  padding: 0.25rem 0.62rem;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.availability-secondary {
+  border-color: rgba(184, 201, 222, 0.2);
+  background: linear-gradient(168deg, rgba(20, 29, 40, 0.82), rgba(9, 13, 20, 0.9));
+}
+
+.availability-secondary .slot-row {
+  padding: 0.72rem 0.86rem;
+}
+
 .step-badge {
   margin: 0;
   width: fit-content;

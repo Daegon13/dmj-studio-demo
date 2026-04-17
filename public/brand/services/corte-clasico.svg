@@ -1,0 +1,14 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="540" rx="36" fill="#0B111A"/>
+  <rect x="52" y="52" width="616" height="436" rx="28" fill="url(#paint0_linear)"/>
+  <path d="M211 344C211 292.085 253.085 250 305 250H415C466.915 250 509 292.085 509 344V364H211V344Z" fill="#0E1622"/>
+  <rect x="282" y="162" width="156" height="142" rx="70" fill="#CBA58B"/>
+  <path d="M274 170C274 136.863 300.863 110 334 110H386C419.137 110 446 136.863 446 170V201H274V170Z" fill="#D13A42"/>
+  <text x="86" y="110" fill="#E7EEF9" font-family="Inter, Arial" font-size="34" font-weight="700">Corte clásico</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="52" y1="52" x2="668" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D2A3D"/>
+      <stop offset="1" stop-color="#0F1725"/>
+    </linearGradient>
+  </defs>
+</svg>
