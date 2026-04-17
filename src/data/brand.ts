@@ -7,23 +7,64 @@ export const brand = {
     "https://api.whatsapp.com/send/?phone=59896963686&text=Hola+DMJ+Studio%21+Quiero+agendar+un+turno.",
   rating: 4.9,
   reviewsCount: 358,
-  positioning: [
-    "Reservá tu corte en segundos",
-    "Barbería premium en el centro de Montevideo",
-    "Cortes, barba, cejas y formación profesional",
+  trustBadges: [
+    "📍 Ubicación céntrica",
+    "🧑‍🎨 Atención personalizada",
+    "🪞 Estudio moderno",
+    "⚡ Reservas rápidas por WhatsApp",
   ],
-  trust: [
-    "Atención personalizada",
-    "Estética premium",
-    "Resultados consistentes",
+  services: [
+    { name: "Corte", price: "desde $690", description: "Fade, clásico o moderno con asesoría de estilo." },
+    { name: "Barba", price: "desde $450", description: "Perfilado preciso con navaja y acabado prolijo." },
+    { name: "Cejas", price: "$250", description: "Diseño natural para reforzar tu look final." },
+    { name: "Combo", price: "desde $1.050", description: "Corte + barba para una puesta a punto completa." },
   ],
-  services: ["Cortes", "Barba", "Cejas", "Formación"],
+  gallery: [
+    "Cortes reales del estudio",
+    "Interior del local",
+    "Detalle de máquinas y tijeras",
+  ],
+  bookingSteps: [
+    "Elegí el servicio que querés.",
+    "Escribinos por WhatsApp.",
+    "Confirmá tu horario en minutos.",
+  ],
+  course: {
+    title: "Curso 2025 de barbería profesional",
+    details: [
+      "3 meses de formación",
+      "1 clase por semana",
+      "Grupo privado de WhatsApp",
+      "Diploma al finalizar",
+      "Módulo de marketing y crecimiento personal",
+    ],
+    cta: "Pedir info del curso",
+  },
+  reviews: [
+    {
+      name: "Matías G.",
+      text: "Excelente atención y nivel técnico. Reservé por WhatsApp y en menos de 5 minutos ya tenía horario.",
+    },
+    {
+      name: "Santiago R.",
+      text: "El estudio está impecable, el corte quedó perfecto y el trato fue de primera. Súper recomendado.",
+    },
+    {
+      name: "Nico P.",
+      text: "Me asesoraron según mi tipo de pelo y salí con un look mucho más prolijo. Volvería sin dudar.",
+    },
+  ],
+  schedule: [
+    "Lunes a viernes · 10:00 a 20:00",
+    "Sábados · 10:00 a 18:00",
+    "Domingos · Cerrado",
+  ],
   hero: {
     eyebrow: "Barbería premium",
-    headline: "Hero oscuro, técnico y urbano para destacar tu estilo",
+    headline: "Tu próxima reserva en 1 minuto, sin vueltas y con resultado premium.",
     subheadline:
-      "Tu próxima visita empieza acá, no en diez mensajes por Instagram: reservá en segundos y vení al estudio listo para tu mejor versión.",
-    primaryCtaLabel: "Reservá tu corte ahora",
+      "DMJ Studio combina técnica, estética y rapidez para que entres, te transformes y salgas con tu mejor versión.",
+    primaryCtaLabel: "Reservar por WhatsApp",
     secondaryCtaLabel: "Ver cursos",
     coursesUrl: "#cursos",
   },
