@@ -7,11 +7,13 @@ export const brand = {
     "https://api.whatsapp.com/send/?phone=59896963686&text=Hola+DMJ+Studio%21+Quiero+agendar+un+turno.",
   rating: 4.9,
   reviewsCount: 358,
+  startingPrice: 250,
   trustBadges: [
     "📍 Ubicación céntrica",
     "🧑‍🎨 Atención personalizada",
     "🪞 Estudio moderno",
     "⚡ Reservas rápidas por WhatsApp",
+    "🎓 Cursos de barbería para principiantes y avanzados",
   ],
   services: [
     { name: "Corte", price: "desde $690", description: "Fade, clásico o moderno con asesoría de estilo." },
@@ -61,9 +63,9 @@ export const brand = {
   ],
   hero: {
     eyebrow: "Barbería premium",
-    headline: "Tu próxima reserva en 1 minuto, sin vueltas y con resultado premium.",
+    headline: "Barbería premium en Montevideo: reservá en 1 minuto y salí con resultado de nivel.",
     subheadline:
-      "DMJ Studio combina técnica, estética y rapidez para que entres, te transformes y salgas con tu mejor versión.",
+      "DMJ Studio es una barbería y academia: cerrás tu reserva por WhatsApp o pedís info del curso en segundos.",
     primaryCtaLabel: "Reservar por WhatsApp",
     secondaryCtaLabel: "Ver cursos",
     coursesUrl: "#cursos",
