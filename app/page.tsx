@@ -9,22 +9,22 @@ const slotClassByStatus: Record<(typeof brand.availability.slots)[number]["statu
 
 export default function Home() {
   return (
-    <main className="shell space-y-8 py-8 pb-32 sm:space-y-10 sm:py-10 sm:pb-10 lg:space-y-12 lg:py-14">
+    <main className="shell space-y-7 py-6 pb-32 sm:space-y-10 sm:py-10 sm:pb-10 lg:space-y-12 lg:py-14">
       <section className="hero card-premium relative overflow-hidden p-6 sm:p-10 lg:p-14">
         <div className="spotlight pointer-events-none absolute -right-24 -top-20 h-72 w-72 rounded-full" />
         <div className="chrome-haze pointer-events-none absolute -left-16 bottom-8 h-40 w-40 rounded-full" />
 
-        <div className="relative z-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
-          <article>
+        <div className="relative z-10 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-10">
+          <article className="animate-enter-1">
             <p className="eyebrow">{brand.hero.eyebrow}</p>
-            <h1 className="heading-display mt-4 text-4xl leading-[1.05] text-[var(--color-title)] sm:text-5xl lg:text-6xl">
+            <h1 className="heading-display mt-4 text-balance text-4xl leading-[1.02] text-[var(--color-title)] sm:text-5xl lg:text-6xl">
               {brand.hero.title}
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-[var(--color-text-soft)] sm:text-base">
+            <p className="mt-5 max-w-2xl text-pretty text-sm leading-relaxed text-[var(--color-text-soft)] sm:text-base">
               {brand.hero.description}
             </p>
 
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href={brand.contact.whatsappUrl}
                 target="_blank"
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </article>
 
-          <aside className="glass-panel space-y-5 p-5 sm:p-6">
+          <aside className="glass-panel animate-enter-2 space-y-5 p-5 sm:p-6">
             <div className="flex items-center gap-4">
               <Image
                 src={brand.placeholders.logo}
@@ -62,7 +62,7 @@ export default function Home() {
 
             <div className="divider" />
 
-            <ul className="space-y-2 text-sm text-[var(--color-text-soft)]">
+            <ul className="space-y-2 text-sm leading-relaxed text-[var(--color-text-soft)]">
               <li>
                 <strong className="text-[var(--color-title)]">Zona:</strong> {brand.zone}
               </li>
@@ -75,19 +75,19 @@ export default function Home() {
               </li>
             </ul>
 
-            <p className="text-xs text-[var(--color-muted)]">{brand.socialProof.note}.</p>
+            <p className="text-xs leading-relaxed text-[var(--color-muted)]">{brand.socialProof.note}.</p>
             <p className="placeholder-frame">{brand.placeholders.heroFrame}</p>
           </aside>
         </div>
       </section>
 
-      <section className="card-premium p-6 sm:p-8 lg:p-10">
+      <section className="card-premium animate-enter-2 p-6 sm:p-8 lg:p-10">
         <p className="eyebrow">Cómo reservar</p>
-        <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)] sm:text-3xl">Tres pasos para cerrar un turno</h2>
+        <h2 className="section-title mt-3">Tres pasos para cerrar un turno</h2>
 
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {brand.bookingSteps.map((step, index) => (
-            <article key={step.title} className="glass-panel p-5">
+            <article key={step.title} className="glass-panel interactive-panel p-5">
               <p className="step-badge">Paso {index + 1}</p>
               <h3 className="mt-3 text-lg font-semibold text-[var(--color-title)]">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-soft)]">{step.description}</p>
@@ -97,10 +97,10 @@ export default function Home() {
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
-        <article className="card-premium p-6 sm:p-8">
+        <article className="card-premium animate-enter-3 p-6 sm:p-8">
           <p className="eyebrow">Agenda visual mock</p>
-          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">{brand.availability.title}</h2>
-          <p className="mt-2 text-sm text-[var(--color-text-soft)]">{brand.availability.caption}</p>
+          <h2 className="section-title mt-3">{brand.availability.title}</h2>
+          <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-soft)]">{brand.availability.caption}</p>
 
           <ul className="mt-5 space-y-3">
             {brand.availability.slots.map((slot) => (
@@ -112,11 +112,11 @@ export default function Home() {
           </ul>
         </article>
 
-        <article className="card-premium p-6 sm:p-8">
+        <article className="card-premium animate-enter-3 p-6 sm:p-8">
           <p className="eyebrow">Ubicación y horario</p>
-          <h2 className="mt-3 text-2xl font-semibold text-[var(--color-title)]">Vení directo, sin vueltas</h2>
+          <h2 className="section-title mt-3">Vení directo, sin vueltas</h2>
 
-          <div className="mt-4 space-y-3 text-sm text-[var(--color-text-soft)]">
+          <div className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--color-text-soft)]">
             <p>
               <strong className="text-[var(--color-title)]">Dirección:</strong> {brand.address}
             </p>
@@ -136,20 +136,20 @@ export default function Home() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 text-xs text-[var(--color-muted)]">{brand.businessHours.note}</p>
+          <p className="mt-4 text-xs leading-relaxed text-[var(--color-muted)]">{brand.businessHours.note}</p>
         </article>
       </section>
 
-      <section className="card-premium cta-strong p-6 text-center sm:p-10">
-        <p className="eyebrow">Cierre comercial</p>
-        <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">{brand.finalCta.title}</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-sm text-white/80 sm:text-base">{brand.finalCta.description}</p>
+      <section className="card-premium cta-strong animate-enter-4 p-6 text-center sm:p-10">
+        <p className="eyebrow text-white/75">Cierre comercial</p>
+        <h2 className="mt-3 text-balance text-3xl font-semibold text-white sm:text-4xl">{brand.finalCta.title}</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-sm text-pretty text-white/85 sm:text-base">{brand.finalCta.description}</p>
 
         <a
           href={brand.contact.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-primary mt-7 min-w-72"
+          className="btn btn-primary mt-7 min-w-64 sm:min-w-72"
         >
           {brand.finalCta.primaryLabel}
         </a>
