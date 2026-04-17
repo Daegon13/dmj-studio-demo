@@ -1,0 +1,47 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Silla principal de barbería y herramientas</title>
+  <desc id="desc">Ilustración estilizada de una barbería premium con silla central, espejo y herramientas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1622"/>
+      <stop offset="0.55" stop-color="#172536"/>
+      <stop offset="1" stop-color="#0A0F18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 230) rotate(90) scale(360 520)">
+      <stop stop-color="#EAF2FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#EAF2FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D43F45"/>
+      <stop offset="1" stop-color="#8A1E28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+
+  <rect x="128" y="110" width="944" height="530" rx="22" fill="#0A111B" stroke="#34455F" stroke-width="3"/>
+  <rect x="172" y="154" width="856" height="442" rx="18" fill="#101A28"/>
+
+  <ellipse cx="600" cy="760" rx="220" ry="42" fill="#02050A"/>
+  <rect x="450" y="350" width="300" height="260" rx="38" fill="url(#chair)"/>
+  <rect x="480" y="270" width="240" height="120" rx="28" fill="url(#chair)"/>
+  <rect x="430" y="420" width="60" height="150" rx="26" fill="#32465F"/>
+  <rect x="710" y="420" width="60" height="150" rx="26" fill="#32465F"/>
+  <rect x="560" y="610" width="80" height="88" rx="14" fill="#31455D"/>
+  <rect x="500" y="688" width="200" height="24" rx="12" fill="#3C556F"/>
+
+  <g opacity="0.86">
+    <rect x="880" y="216" width="90" height="18" rx="9" fill="#C7D4E5"/>
+    <rect x="880" y="252" width="120" height="18" rx="9" fill="#9DB6D3"/>
+    <rect x="880" y="288" width="72" height="18" rx="9" fill="#7B95B4"/>
+  </g>
+
+  <g opacity="0.8" stroke="#D5E1EF" stroke-width="10" stroke-linecap="round">
+    <line x1="280" y1="254" x2="356" y2="290"/>
+    <line x1="312" y1="318" x2="248" y2="380"/>
+    <line x1="352" y1="316" x2="286" y2="394"/>
+  </g>
+
+  <rect x="64" y="64" width="1072" height="772" rx="30" stroke="#4E627F" stroke-opacity="0.55" stroke-width="2"/>
+</svg>
