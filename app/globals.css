@@ -84,6 +84,20 @@ body {
   backdrop-filter: blur(6px);
 }
 
+.social-proof-strip {
+  border-color: rgba(208, 212, 219, 0.2);
+  background: linear-gradient(160deg, rgba(28, 33, 42, 0.88), rgba(13, 16, 20, 0.85));
+}
+
+.pill {
+  border: 1px solid rgba(204, 74, 78, 0.56);
+  border-radius: var(--radius-pill);
+  padding: 0.25rem 0.65rem;
+  font-weight: 700;
+  color: #ffd8d8;
+  background: rgba(202, 45, 49, 0.2);
+}
+
 .ring-light {
   background: radial-gradient(circle, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.06) 46%, transparent 72%);
   filter: blur(2px);

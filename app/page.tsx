@@ -10,6 +10,12 @@ export default function Home() {
           <div className="chrome-glow pointer-events-none absolute left-[-6rem] top-[35%] h-44 w-44 rounded-full" />
 
           <div className="relative z-10">
+            <div className="social-proof-strip glass-panel mb-5 flex flex-wrap items-center gap-2 p-3 text-xs sm:text-sm">
+              <span className="pill">★ {brand.rating}/5</span>
+              <span>{brand.reviewsCount}+ reseñas reales</span>
+              <span className="hidden sm:inline">·</span>
+              <span className="text-[var(--color-title)]">{brand.name} · {brand.category}</span>
+            </div>
             <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">
               {brand.hero.eyebrow} · {brand.zone}
             </p>
@@ -33,11 +39,13 @@ export default function Home() {
               <span className="text-[var(--color-title)]">★ {brand.rating}</span>
               <span>·</span>
               <span>{brand.reviewsCount} reseñas</span>
+              <span>·</span>
+              <span className="text-[var(--color-accent)]">Precios claros desde ${brand.startingPrice}</span>
             </div>
           </div>
 
           <aside className="glass-panel relative z-10 mt-8 p-5 sm:p-6 lg:mt-0">
-            <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Confianza inmediata</p>
+            <p className="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">Hecho para convertir</p>
             <ul className="mt-4 space-y-3 text-sm text-[var(--color-text)]">
               {brand.trustBadges.map((badge) => (
                 <li key={badge} className="flex gap-2 leading-relaxed">
@@ -45,6 +53,14 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+            <div className="mt-5 grid gap-2 text-sm">
+              <a href={brand.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                Cerrar reserva ahora
+              </a>
+              <a href="#cursos" className="btn btn-secondary">
+                Quiero formarme (cursos)
+              </a>
+            </div>
           </aside>
         </section>
 
