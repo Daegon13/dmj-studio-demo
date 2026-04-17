@@ -61,6 +61,13 @@ body {
   box-shadow: var(--shadow-soft), var(--shadow-inset);
 }
 
+.thesis-card {
+  border: 1px solid rgba(199, 43, 43, 0.3);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, rgba(199, 43, 43, 0.09), rgba(17, 19, 23, 0.95) 45%);
+  box-shadow: var(--shadow-soft), var(--shadow-inset);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
