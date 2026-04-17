@@ -24,6 +24,9 @@ export const brand = {
     description:
       "DMJ Studio puede pasar de responder todo por Instagram a guiar cada lead con pasos claros, horarios visibles y cierres directos por WhatsApp.",
     secondaryCtaLabel: "Ver cursos disponibles",
+    imageUrl: "/brand/hero-main.svg",
+    imageAlt: "Silla principal de DMJ Studio con espejo y herramientas de barbería",
+    imageFallbackText: "Imagen no disponible temporalmente: vista principal del estudio",
   },
   bookingSteps: [
     {
