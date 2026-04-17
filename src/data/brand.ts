@@ -28,6 +28,35 @@ export const brand = {
     imageAlt: "Silla principal de DMJ Studio con espejo y herramientas de barbería",
     imageFallbackText: "Imagen no disponible temporalmente: vista principal del estudio",
   },
+  services: {
+    eyebrow: "Servicios destacados",
+    title: "Precios claros para reservar sin fricción",
+    description:
+      "Mostrá desde el inicio qué incluye cada servicio, cuánto cuesta y cuánto demora. Menos ida y vuelta, más cierres.",
+    items: [
+      {
+        name: "Corte clásico",
+        price: "$790 UYU",
+        duration: "40 min",
+        image: "/brand/services/corte-clasico.svg",
+        popular: false,
+      },
+      {
+        name: "Barba premium",
+        price: "$650 UYU",
+        duration: "30 min",
+        image: "/brand/services/barba-premium.svg",
+        popular: false,
+      },
+      {
+        name: "Combo corte + barba",
+        price: "$1.250 UYU",
+        duration: "70 min",
+        image: "/brand/services/combo-corte-barba.svg",
+        popular: true,
+      },
+    ],
+  },
   bookingSteps: [
     {
       title: "Elegís servicio",

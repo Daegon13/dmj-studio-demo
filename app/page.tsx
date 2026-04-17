@@ -1,4 +1,5 @@
 import { HeroSection } from "@/src/components/landing/HeroSection";
+import { ServicesGrid } from "@/src/components/landing/ServicesGrid";
 import { brand } from "@/src/data/brand";
 
 const slotClassByStatus: Record<(typeof brand.availability.slots)[number]["status"], string> = {
@@ -27,22 +28,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-2">
-        <article className="card-premium animate-enter-3 p-6 sm:p-8">
-          <p className="eyebrow">Agenda visual mock</p>
-          <h2 className="section-title mt-3">{brand.availability.title}</h2>
-          <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-soft)]">{brand.availability.caption}</p>
+      <ServicesGrid />
 
-          <ul className="mt-5 space-y-3">
-            {brand.availability.slots.map((slot) => (
-              <li key={slot.time} className="slot-row">
-                <span className="slot-time">{slot.time}</span>
-                <span className={`slot-chip ${slotClassByStatus[slot.status]}`}>{slot.status}</span>
-              </li>
-            ))}
-          </ul>
-        </article>
-
+      <section className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <article className="card-premium animate-enter-3 p-6 sm:p-8">
           <p className="eyebrow">Ubicación y horario</p>
           <h2 className="section-title mt-3">Vení directo, sin vueltas</h2>
@@ -69,6 +57,21 @@ export default function Home() {
           </ul>
           <p className="mt-4 text-xs leading-relaxed text-[var(--color-muted)]">{brand.businessHours.note}</p>
         </article>
+
+        <aside className="glass-panel animate-enter-3 availability-secondary p-5 sm:p-6" aria-label="Disponibilidad de agenda demo">
+          <p className="eyebrow">Agenda visual mock</p>
+          <h2 className="mt-3 text-xl font-semibold text-[var(--color-title)]">{brand.availability.title}</h2>
+          <p className="mt-2 text-sm leading-relaxed text-[var(--color-text-soft)]">{brand.availability.caption}</p>
+
+          <ul className="mt-4 space-y-2.5">
+            {brand.availability.slots.map((slot) => (
+              <li key={slot.time} className="slot-row">
+                <span className="slot-time">{slot.time}</span>
+                <span className={`slot-chip ${slotClassByStatus[slot.status]}`}>{slot.status}</span>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </section>
 
       <section className="card-premium cta-strong animate-enter-4 p-6 text-center sm:p-10">

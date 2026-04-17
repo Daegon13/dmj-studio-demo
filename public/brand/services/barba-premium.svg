@@ -1,0 +1,15 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="540" rx="36" fill="#0B111A"/>
+  <rect x="52" y="52" width="616" height="436" rx="28" fill="url(#paint0_linear)"/>
+  <path d="M228 190C228 134.772 272.772 90 328 90H392C447.228 90 492 134.772 492 190V248C492 324.216 430.216 386 354 386H366C289.784 386 228 324.216 228 248V190Z" fill="#D6B198"/>
+  <path d="M250 264C280 314 316 346 360 346C404 346 440 314 470 264V284C470 347.513 418.513 399 355 399C291.487 399 240 347.513 240 284V264H250Z" fill="#0E1622"/>
+  <circle cx="316" cy="234" r="10" fill="#0E1622"/>
+  <circle cx="408" cy="234" r="10" fill="#0E1622"/>
+  <text x="86" y="110" fill="#E7EEF9" font-family="Inter, Arial" font-size="34" font-weight="700">Barba premium</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="52" y1="52" x2="668" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2738"/>
+      <stop offset="1" stop-color="#121A28"/>
+    </linearGradient>
+  </defs>
+</svg>

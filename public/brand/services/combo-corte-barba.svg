@@ -1,0 +1,16 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="540" rx="36" fill="#0B111A"/>
+  <rect x="52" y="52" width="616" height="436" rx="28" fill="url(#paint0_linear)"/>
+  <rect x="154" y="152" width="164" height="248" rx="82" fill="#D1AB91"/>
+  <rect x="402" y="152" width="164" height="248" rx="82" fill="#D1AB91"/>
+  <path d="M146 170C146 127.026 180.843 92.1836 223.816 92.1836H248.184C291.157 92.1836 326 127.026 326 170V198H146V170Z" fill="#D13A42"/>
+  <path d="M394 170C394 127.026 428.843 92.1836 471.816 92.1836H496.184C539.157 92.1836 574 127.026 574 170V198H394V170Z" fill="#2A71D4"/>
+  <path d="M412 284C435 320 458 336 484 336C510 336 533 320 556 284V304C556 345.974 521.974 380 480 380C438.026 380 404 345.974 404 304V284H412Z" fill="#0E1622"/>
+  <text x="86" y="110" fill="#E7EEF9" font-family="Inter, Arial" font-size="34" font-weight="700">Combo corte + barba</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="52" y1="52" x2="668" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202D3F"/>
+      <stop offset="1" stop-color="#121B2A"/>
+    </linearGradient>
+  </defs>
+</svg>
