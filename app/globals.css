@@ -2,16 +2,16 @@
 
 :root {
   /* Color tokens */
-  --color-bg: #0a0b0d;
-  --color-bg-elevated: #13161a;
-  --color-surface: #1a1d22;
-  --color-border: #2c3138;
-  --color-title: #f3f4f6;
-  --color-text: #d4d7dd;
-  --color-text-soft: #9ba3af;
-  --color-muted: #858f9d;
-  --color-accent: #c72b2b;
-  --color-accent-soft: #2b6ac7;
+  --color-bg: #060708;
+  --color-bg-elevated: #101216;
+  --color-surface: #161b21;
+  --color-border: #2a3139;
+  --color-title: #f2f2ee;
+  --color-text: #d0d4db;
+  --color-text-soft: #a4adb8;
+  --color-muted: #838d9a;
+  --color-accent: #ca2d31;
+  --color-accent-soft: #2b71d4;
 
   /* Radius tokens */
   --radius-sm: 10px;
@@ -40,9 +40,12 @@ body {
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top, #181b20 0%, var(--color-bg) 55%);
+  background:
+    radial-gradient(circle at 18% -15%, #262a31 0%, transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(46, 65, 95, 0.25) 0%, transparent 32%),
+    linear-gradient(150deg, #0c0f13 0%, var(--color-bg) 52%);
   color: var(--color-text);
-  font-family: "Inter", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans), "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
 .shell {
@@ -52,32 +55,72 @@ body {
 
 .card-premium {
   background: linear-gradient(
-    155deg,
-    rgba(32, 36, 43, 0.92),
-    rgba(17, 19, 23, 0.94) 60%
+    145deg,
+    rgba(31, 35, 43, 0.92) 0%,
+    rgba(13, 16, 20, 0.96) 68%
   );
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft), var(--shadow-inset);
 }
 
+.hero-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.heading-display {
+  font-family: var(--font-display), "Times New Roman", serif;
+  letter-spacing: 0.01em;
+}
+
+.glass-panel {
+  background: linear-gradient(160deg, rgba(25, 30, 37, 0.78), rgba(12, 15, 19, 0.8));
+  border: 1px solid rgba(212, 216, 224, 0.16);
+  border-radius: var(--radius-md);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.09),
+    0 12px 34px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.ring-light {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.06) 46%, transparent 72%);
+  filter: blur(2px);
+}
+
+.barber-pole {
+  background:
+    repeating-linear-gradient(
+      40deg,
+      rgba(230, 232, 236, 0.06) 0 10px,
+      rgba(200, 45, 49, 0.2) 10px 18px,
+      rgba(42, 113, 212, 0.22) 18px 26px
+    );
+  filter: blur(8px);
+}
+
+.chrome-glow {
+  background: radial-gradient(circle, rgba(200, 205, 215, 0.24) 0%, rgba(47, 55, 68, 0.12) 52%, transparent 78%);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.875rem;
+  min-height: 3rem;
   border-radius: var(--radius-pill);
-  padding-inline: 1.2rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+  padding-inline: 1.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.22s ease;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #d43636, var(--color-accent));
+  background: linear-gradient(135deg, #d23f43, var(--color-accent));
   color: #fff;
-  box-shadow: 0 8px 24px rgba(199, 43, 43, 0.35);
+  box-shadow: 0 10px 26px rgba(202, 45, 49, 0.4);
 }
 
 .btn-primary:hover {
@@ -86,12 +129,19 @@ body {
 }
 
 .btn-secondary {
-  border: 1px solid var(--color-border);
-  background: rgba(18, 20, 25, 0.75);
+  border: 1px solid rgba(200, 206, 219, 0.24);
+  background: rgba(13, 16, 20, 0.68);
   color: var(--color-title);
 }
 
 .btn-secondary:hover {
   border-color: rgba(126, 155, 202, 0.85);
   color: #dbeafe;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: end;
+  }
 }

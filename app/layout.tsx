@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { brand } from "@/src/data/brand";
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const display = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 
 export const metadata: Metadata = {
   title: `${brand.name} | Demo comercial`,
@@ -27,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="h-full antialiased">
+    <html lang="es" className={`${sans.variable} ${display.variable} h-full antialiased`}>
       <body className="min-h-full bg-[var(--color-bg)] text-[var(--color-text)]">
         {children}
       </body>
