@@ -7,12 +7,23 @@ export const brand = {
     "https://api.whatsapp.com/send/?phone=59896963686&text=Hola+DMJ+Studio%21+Quiero+agendar+un+turno.",
   rating: 4.9,
   reviewsCount: 358,
+  positioning: [
+    "Reservá tu corte en segundos",
+    "Barbería premium en el centro de Montevideo",
+    "Cortes, barba, cejas y formación profesional",
+  ],
+  trust: [
+    "Atención personalizada",
+    "Estética premium",
+    "Resultados consistentes",
+  ],
+  services: ["Cortes", "Barba", "Cejas", "Formación"],
   hero: {
     eyebrow: "Barbería premium",
-    headline: "Estilo urbano con precisión de estudio",
+    headline: "Hero oscuro, técnico y urbano para destacar tu estilo",
     subheadline:
-      "Una demo comercial pensada para convertir reservas y presentar una marca sólida desde el primer vistazo.",
-    primaryCtaLabel: "Reservar por WhatsApp",
+      "Tu próxima visita empieza acá, no en diez mensajes por Instagram: reservá en segundos y vení al estudio listo para tu mejor versión.",
+    primaryCtaLabel: "Reservá tu corte ahora",
     secondaryCtaLabel: "Ver cursos",
     coursesUrl: "#cursos",
   },
