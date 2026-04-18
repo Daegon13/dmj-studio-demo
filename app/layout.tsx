@@ -3,7 +3,7 @@ import "./globals.css";
 import { brand } from "@/src/data/brand";
 
 const title = `${brand.name} | Demo comercial`;
-const description = "Demo comercial de alto impacto para barbería premium en Montevideo.";
+const description = "Landing comercial de DMJ Studio con foco en claridad visual y conversión por WhatsApp.";
 
 export const metadata: Metadata = {
   title,
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
   },
   keywords: [
     brand.name,
-    "barbería premium",
+    "barbería",
     "barbería en Montevideo",
     "reserva por WhatsApp",
-    "demo comercial",
+    "landing comercial",
   ],
   category: "Business",
   openGraph: {
-    title: `${brand.name} | ${brand.businessLine} premium`,
-    description: `${brand.businessLine} premium en ${brand.zone}.`,
+    title: `${brand.name} | ${brand.businessLine} en Montevideo`,
+    description: `${brand.businessLine} en ${brand.zone} con reservas por WhatsApp.`,
     url: brand.siteUrl,
     siteName: brand.name,
     locale: "es_UY",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title,
-    description: `Base comercial premium de ${brand.businessLine}.`,
+    description: `Landing comercial de ${brand.businessLine} con foco visual.`,
     images: ["/twitter-image"],
   },
   robots: {
