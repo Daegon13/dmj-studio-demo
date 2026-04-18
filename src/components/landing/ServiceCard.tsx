@@ -14,8 +14,8 @@ export function ServiceCard({ service }: ServiceCardProps) {
         <Image
           src={service.image}
           alt={`Imagen de ${service.name}`}
-          width={720}
-          height={540}
+          width={1536}
+          height={1024}
           className="service-image"
           sizes="(min-width: 1024px) 24vw, (min-width: 640px) 42vw, 100vw"
         />

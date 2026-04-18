@@ -18,10 +18,10 @@ export function LocationAvailabilitySection() {
           <Image
             src={brand.location.imageUrl}
             alt={brand.location.imageAlt}
-            width={1400}
-            height={920}
+            width={1536}
+            height={1024}
             className="location-image"
-            sizes="(min-width: 1024px) 45vw, 100vw"
+            sizes="(min-width: 1280px) 40vw, (min-width: 1024px) 45vw, 100vw"
           />
         </div>
 

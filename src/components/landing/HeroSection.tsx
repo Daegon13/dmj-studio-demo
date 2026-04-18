@@ -82,10 +82,10 @@ export function HeroSection() {
               <Image
                 src={brand.hero.imageUrl}
                 alt={brand.hero.imageAlt}
-                width={1200}
-                height={900}
+                width={800}
+                height={533}
                 className="h-auto w-full object-cover"
-                sizes="(min-width: 1024px) 32vw, 100vw"
+                sizes="(min-width: 1280px) 28vw, (min-width: 1024px) 32vw, 100vw"
                 onError={() => setShowImageFallback(true)}
               />
             )}
