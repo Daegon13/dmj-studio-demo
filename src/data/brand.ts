@@ -6,8 +6,8 @@ export const brand = {
   mapReference: "A 1 cuadra de Plaza Cagancha · Fácil acceso en bus y estacionamiento cercano",
   location: {
     imageUrl:
-      "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Fachada de barbería urbana iluminada durante la tarde",
+      "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/location-facade.png",
+    imageAlt: "Fachada de DMJ Studio vista desde la vereda",
     neighborhood: "Centro, Montevideo",
     landmark: "A 1 cuadra de Plaza Cagancha",
     mapsUrl: "https://maps.google.com/?q=18+de+Julio+1710+Montevideo",
@@ -32,8 +32,8 @@ export const brand = {
     description:
       "DMJ Studio puede pasar de responder todo por Instagram a guiar cada lead con pasos claros, horarios visibles y cierres directos por WhatsApp.",
     secondaryCtaLabel: "Ver cursos disponibles",
-    imageUrl: "/brand/hero-main.svg",
-    imageAlt: "Silla principal de DMJ Studio con espejo y herramientas de barbería",
+    imageUrl: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/hero-desktop.png",
+    imageAlt: "Barbero trabajando junto a la silla principal de DMJ Studio",
     imageFallbackText: "Imagen no disponible temporalmente: vista principal del estudio",
   },
   services: {
@@ -46,21 +46,21 @@ export const brand = {
         name: "Corte clásico",
         price: "$790 UYU",
         duration: "40 min",
-        image: "/brand/services/corte-clasico.svg",
+        image: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/services/corte-fade.png",
         popular: false,
       },
       {
         name: "Barba premium",
         price: "$650 UYU",
         duration: "30 min",
-        image: "/brand/services/barba-premium.svg",
+        image: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/services/barba-toalla.png",
         popular: false,
       },
       {
         name: "Combo corte + barba",
         price: "$1.250 UYU",
         duration: "70 min",
-        image: "/brand/services/combo-corte-barba.svg",
+        image: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/services/combo-corte-barba.png",
         popular: true,
       },
     ],
