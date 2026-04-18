@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #04050a;
-  --color-bg-elevated: #0d121b;
-  --color-surface: #151d27;
-  --color-border: #313b49;
-  --color-title: #f6f9ff;
-  --color-text: #d7e0ea;
-  --color-text-soft: #b5c1ce;
-  --color-muted: #8c99a8;
-  --color-accent: #ca2d31;
-  --color-accent-cool: #2a71d4;
+  --color-bg: #0d0f12;
+  --color-bg-elevated: #171b22;
+  --color-surface: #1f252f;
+  --color-border: #394252;
+  --color-title: #f8f5ef;
+  --color-text: #e0d8ca;
+  --color-text-soft: #c7bea9;
+  --color-muted: #a79d88;
+  --color-accent: #b7863f;
+  --color-accent-cool: #5e6f8f;
 
   --radius-sm: 10px;
   --radius-md: 16px;
@@ -41,11 +41,11 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 12% -18%, rgba(132, 164, 214, 0.2), transparent 42%),
-    radial-gradient(circle at 84% 2%, rgba(42, 113, 212, 0.22), transparent 35%),
-    linear-gradient(152deg, #0a1018 0%, #05070d 44%, var(--color-bg) 100%);
+    radial-gradient(circle at 12% -18%, rgba(208, 171, 114, 0.18), transparent 42%),
+    radial-gradient(circle at 84% 2%, rgba(94, 111, 143, 0.18), transparent 35%),
+    linear-gradient(152deg, #17120f 0%, #111316 44%, var(--color-bg) 100%);
   color: var(--color-text);
-  font-family: "Inter", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: "DM Sans", "Inter", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
   line-height: 1.5;
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .heading-display {
-  font-family: "Playfair Display", "Times New Roman", Georgia, serif;
+  font-family: "Space Grotesk", "DM Sans", "Avenir Next", "Segoe UI", sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -130,9 +130,9 @@ body {
 }
 
 .btn-primary {
-  color: #fff;
-  background: linear-gradient(135deg, #d43f45, var(--color-accent));
-  box-shadow: 0 10px 26px rgba(202, 45, 49, 0.35);
+  color: #1c1610;
+  background: linear-gradient(135deg, #d6a25a, var(--color-accent));
+  box-shadow: 0 10px 26px rgba(183, 134, 63, 0.35);
 }
 
 .btn-primary:hover {
@@ -147,8 +147,8 @@ body {
 }
 
 .btn-secondary:hover {
-  border-color: rgba(133, 165, 219, 0.9);
-  background: rgba(16, 22, 30, 0.92);
+  border-color: rgba(214, 174, 113, 0.9);
+  background: rgba(27, 22, 18, 0.92);
 }
 
 .btn-secondary:disabled {
@@ -350,7 +350,7 @@ body {
   background:
     radial-gradient(circle at 16% 14%, rgba(255, 255, 255, 0.18), transparent 42%),
     radial-gradient(circle at 80% 80%, rgba(255, 215, 180, 0.15), transparent 45%),
-    linear-gradient(130deg, #b1252a, #710f15 56%, #43080b 100%);
+    linear-gradient(130deg, #c09252, #8d6736 56%, #4f3920 100%);
   box-shadow: var(--shadow-strong), var(--shadow-inset);
 }
 

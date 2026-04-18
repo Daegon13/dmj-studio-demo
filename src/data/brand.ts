@@ -14,10 +14,10 @@ export const brand = {
   },
   siteUrl: "https://dmj-studio-demo.vercel.app",
   contact: {
-    whatsappLabel: "Reservar por WhatsApp",
+    whatsappLabel: "Agendar por WhatsApp",
     whatsappUrl:
       "https://api.whatsapp.com/send/?phone=59896963686&text=Hola+DMJ+Studio%21+Quiero+agendar+un+turno.",
-    coursesLabel: "Ver cursos",
+    coursesLabel: "Consultar formaciones",
     coursesUrl:
       "https://api.whatsapp.com/send/?phone=59896963686&text=Hola+DMJ+Studio%21+Quiero+info+sobre+sus+cursos.",
   },
@@ -27,20 +27,20 @@ export const brand = {
     note: "reseñas verificables en plataformas públicas",
   },
   hero: {
-    eyebrow: "Demo comercial · Patch 06",
-    title: "Una web que ordena reservas, reduce mensajes sueltos y convierte más",
+    eyebrow: "Landing comercial DMJ",
+    title: "Presencia clara para convertir consultas en reservas confirmadas",
     description:
-      "DMJ Studio puede pasar de responder todo por Instagram a guiar cada lead con pasos claros, horarios visibles y cierres directos por WhatsApp.",
-    secondaryCtaLabel: "Ver cursos disponibles",
+      "Esta versión mantiene una sola landing, prioriza lectura rápida y deja el flujo de turnos avanzado para una etapa posterior.",
+    secondaryCtaLabel: "Explorar formaciones",
     imageUrl: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/hero-desktop.png",
     imageAlt: "Barbero trabajando junto a la silla principal de DMJ Studio",
     imageFallbackText: "Imagen no disponible temporalmente: vista principal del estudio",
   },
   services: {
-    eyebrow: "Servicios destacados",
-    title: "Precios claros para reservar sin fricción",
+    eyebrow: "Servicios base",
+    title: "Opciones simples para decidir y reservar sin fricción",
     description:
-      "Mostrá desde el inicio qué incluye cada servicio, cuánto cuesta y cuánto demora. Menos ida y vuelta, más cierres.",
+      "Mostramos servicios, duración y precio en un bloque limpio para facilitar la decisión desde el primer scroll.",
     items: [
       {
         name: "Corte clásico",
@@ -68,20 +68,20 @@ export const brand = {
   bookingSteps: [
     {
       title: "Elegís servicio",
-      description: "Corte, barba o combo. El cliente entra y entiende qué puede reservar en segundos.",
+      description: "El cliente entiende en segundos qué incluye cada opción y cuánto dura.",
     },
     {
-      title: "Elegís horario",
-      description: "Ve los bloques libres sin escribir 10 mensajes para coordinar disponibilidad.",
+      title: "Definís horario",
+      description: "Se muestra disponibilidad orientativa para ordenar la conversación inicial.",
     },
     {
       title: "Confirmás por WhatsApp",
-      description: "Con un click se envía el turno prearmado y el equipo solo valida la reserva.",
+      description: "Se envía un mensaje listo para confirmar, sin sumar complejidad en esta fase.",
     },
   ],
   availability: {
-    title: "Disponibilidad de hoy (mock)",
-    caption: "Ejemplo visual editable para mostrar orden operativo sin conectar backend.",
+    title: "Disponibilidad orientativa",
+    caption: "Vista simple para dar contexto visual. La lógica avanzada de turnos queda para una próxima iteración.",
     slots: [
       { time: "10:00", status: "Disponible" },
       { time: "11:30", status: "Último lugar" },
@@ -92,23 +92,23 @@ export const brand = {
     ],
   },
   testimonials: {
-    eyebrow: "Testimonios",
-    title: "Lo que comentan clientes después del turno",
+    eyebrow: "Experiencias reales",
+    title: "Comentarios que respaldan el estándar de DMJ",
     description:
-      "Mock comercial con reseñas tipo Google/Instagram para reforzar confianza antes del cierre por WhatsApp.",
+      "Testimonios de referencia para reforzar confianza y sostener una decisión rápida antes del contacto.",
     items: [
       {
-        quote: "Reservé en 2 minutos y llegué sin esperar. El acabado quedó impecable.",
+        quote: "Me atendieron puntual y con un resultado impecable. Reservar fue directo.",
         author: "Matías R.",
         meta: "Cliente frecuente · Corte + barba",
       },
       {
-        quote: "Se nota el orden: precio claro, horario claro y confirmación al instante.",
+        quote: "La propuesta es clara: precio, tiempo y confirmación. Todo en una sola vista.",
         author: "Nicolás P.",
         meta: "Primera visita · Corte clásico",
       },
       {
-        quote: "El flujo por WhatsApp evita vueltas y me dejó todo confirmado en un click.",
+        quote: "El contacto por WhatsApp me resolvió rápido sin mensajes eternos.",
         author: "Santiago V.",
         meta: "Cliente mensual · Barba premium",
       },
@@ -130,7 +130,7 @@ export const brand = {
   },
   businessHours: {
     title: "Horarios de atención",
-    note: "Estos horarios son demo y se editan desde data local.",
+    note: "Horarios de referencia en esta fase visual.",
     rows: [
       { day: "Lunes a Viernes", hours: "09:00 a 20:00" },
       { day: "Sábado", hours: "10:00 a 18:00" },
@@ -138,20 +138,20 @@ export const brand = {
     ],
   },
   finalCta: {
-    title: "¿Querés una web que te ordene ventas desde esta semana?",
+    title: "¿Querés impulsar DMJ con una landing que convierta mejor?",
     description:
-      "Convertí consultas dispersas en reservas claras con pasos simples, agenda visible y cierre directo por WhatsApp.",
-    primaryLabel: "Quiero mi web comercial",
+      "Ordenamos el mensaje en una estructura única, visualmente clara y lista para evolucionar en próximas fases.",
+    primaryLabel: "Quiero esta estructura para mi marca",
   },
   footer: {
-    eyebrow: "DMJ Studio · Presencia digital",
-    title: "Estructura modular para iterar diseño sin tocar routing",
+    eyebrow: "DMJ Studio · Landing one-page",
+    title: "Arquitectura estable para iterar diseño sin abrir nuevas rutas",
     description:
-      "La landing se organiza en bloques independientes conectados a `brand.ts`, para acelerar pruebas visuales y ajustes de copy sin romper la base App Router.",
+      "Cada bloque se alimenta desde `brand.ts`, permitiendo ajustar copy, estilo y propuesta visual sin romper la base actual.",
   },
   placeholders: {
     logo: "/brand/logo-mark.svg",
-    heroFrame: "Espacio de imagen premium: silla principal + detalle de herramientas",
+    heroFrame: "Espacio de imagen principal: experiencia en sillón + detalle de herramientas",
   },
 } as const;
 
