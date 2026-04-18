@@ -457,10 +457,57 @@ body {
   gap: 1rem;
 }
 
+.dmj-noir-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.dmj-noir-promises {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+.dmj-noir-promise-card {
+  border: 1px solid rgba(192, 205, 224, 0.2);
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, rgba(20, 27, 37, 0.9), rgba(8, 11, 17, 0.95));
+  padding: 1rem;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.dmj-noir-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.dmj-noir-value {
+  margin: 0.45rem 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.dmj-noir-trust-card {
+  border: 1px solid rgba(183, 202, 225, 0.2);
+  border-radius: var(--radius-md);
+  background: linear-gradient(166deg, rgba(28, 37, 50, 0.8), rgba(11, 15, 23, 0.9));
+  padding: 1rem;
+}
+
 @media (min-width: 1024px) {
   .visual-footer-grid {
     grid-template-columns: 1.15fr 0.85fr;
     align-items: start;
+  }
+
+  .dmj-noir-promises {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
