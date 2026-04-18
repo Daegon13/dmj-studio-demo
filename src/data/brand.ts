@@ -6,7 +6,7 @@ export const brand = {
   mapReference: "A 1 cuadra de Plaza Cagancha · Fácil acceso en bus y estacionamiento cercano",
   location: {
     imageUrl:
-      "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/location-facade.png",
+      "/brand/hero-main.svg",
     imageAlt: "Fachada de DMJ Studio vista desde la vereda",
     neighborhood: "Centro, Montevideo",
     landmark: "A 1 cuadra de Plaza Cagancha",
@@ -32,7 +32,7 @@ export const brand = {
     description:
       "Esta versión mantiene una sola landing, prioriza lectura rápida y deja el flujo de turnos avanzado para una etapa posterior.",
     secondaryCtaLabel: "Explorar formaciones",
-    imageUrl: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/hero-desktop.png",
+    imageUrl: "/brand/hero-main.svg",
     imageAlt: "Barbero trabajando junto a la silla principal de DMJ Studio",
     imageFallbackText: "Imagen no disponible temporalmente: vista principal del estudio",
   },
@@ -46,21 +46,21 @@ export const brand = {
         name: "Corte clásico",
         price: "$790 UYU",
         duration: "40 min",
-        image: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/services/corte-fade.png",
+        image: "/brand/services/corte-clasico.svg",
         popular: false,
       },
       {
         name: "Barba premium",
         price: "$650 UYU",
         duration: "30 min",
-        image: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/services/barba-toalla.png",
+        image: "/brand/services/barba-premium.svg",
         popular: false,
       },
       {
         name: "Combo corte + barba",
         price: "$1.250 UYU",
         duration: "70 min",
-        image: "/Reference/Barberia_demo-main/Barberia_demo-main/barber-demo/public/images/services/combo-corte-barba.png",
+        image: "/brand/services/combo-corte-barba.svg",
         popular: true,
       },
     ],

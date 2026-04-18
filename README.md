@@ -37,6 +37,16 @@ npm run lint
 npm run build
 ```
 
+### 2.5) Donor migration guard (Astro -> Next)
+
+Before committing migration-related changes, run:
+
+```bash
+npm run check:donor
+```
+
+This guard enforces that `.astro` files are not copied into implementation and that donor-code references are not imported directly.
+
 ### 3) Deploy from Vercel dashboard
 
 1. Push this repo to GitHub/GitLab/Bitbucket.
