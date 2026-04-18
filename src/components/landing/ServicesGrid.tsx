@@ -1,7 +1,11 @@
 import { ServiceCard } from "@/src/components/landing/ServiceCard";
-import { brand } from "@/src/data/brand";
+import type { Brand } from "@/src/data/brand";
 
-export function ServicesGrid() {
+type ServicesGridProps = {
+  brand: Brand;
+};
+
+export function ServicesGrid({ brand }: ServicesGridProps) {
   return (
     <section className="card-premium animate-enter-3 p-6 sm:p-8 lg:p-10">
       <p className="eyebrow">{brand.services.eyebrow}</p>

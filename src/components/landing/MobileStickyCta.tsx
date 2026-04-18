@@ -1,13 +1,17 @@
-import { brand } from "@/src/data/brand";
+import type { Brand } from "@/src/data/brand";
 
-export function MobileStickyCta() {
+type MobileStickyCtaProps = {
+  brand: Brand;
+};
+
+export function MobileStickyCta({ brand }: MobileStickyCtaProps) {
   return (
-    <aside className="mobile-sticky-cta" aria-label="Accesos rápidos">
-      <a href={brand.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-        Reservar ahora
-      </a>
+    <aside className="mobile-sticky-cta" aria-label={`Accesos rápidos de ${brand.name}`}>
       <a href={brand.contact.coursesUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-        Cursos
+        {brand.contact.coursesLabel}
+      </a>
+      <a href={brand.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+        {brand.contact.whatsappLabel}
       </a>
     </aside>
   );
